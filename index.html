@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href='https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css' rel='stylesheet'
+    integrity='sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC' crossorigin='anonymous'>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+  <link rel="stylesheet" href="style.css">
+  <title>Lego Site!</title>
+</head>
+
+
+<body>
+  <!-- SECTION navbar -->
+  <header>
+    <nav class="navbar sticky-top navbar-light">
+      <a class="navbar-brand" href="#"><img
+          src="data:image/png;base64,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"
+          alt="" class="px-3" style="height:5vh"></a>
+    </nav>
+  </header>
+
+  <main>
+
+    <section class=" hero container-fluid">
+      <div class="row mx-5 py-5 justify-content-between">
+        <form class="col-md-4">
+          <div class="form-group">
+            <label for="formGroupExampleInput">Subscribe</label>
+            <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Name">
+          </div>
+          <div class="form-group">
+            <label for="formGroupExampleInput2"></label>
+            <input type="text" class="form-control" id="formGroupExampleInput2" placeholder="Phone">
+          </div>
+          <div class="form-group">
+            <label for="formGroupExampleInput2"></label>
+            <input type="text" class="form-control" id="formGroupExampleInput2" placeholder="Email">
+          </div>
+          <div class="form-group">
+            <label for="exampleFormControlTextarea1"></label>
+            <textarea class="form-control" id="exampleFormControlTextarea1" placeholder="Comments" rows="3"></textarea>
+          </div>
+
+        </form>
+        <div class="col-md-4 m-5">
+          <div class="text-dark d-none d-md-block d-lg-block">
+            <h2>I love Lego!</h2>
+            <p>Lorem ipsum dolor sit amet consectetur
+              adipisicing
+              <br>
+              elit. Nostrum qui vero in totam error eos?
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- TODO fix mobile order and floating list -->
+    <section class="bg-theme">
+      <div class="row g-0">
+
+        <div class="col-12 col-md-6 p-5 order-2">
+          <h3>Welcome to the amazing world of Star Wars Lego!</h3>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis repudiandae
+            mollitia est dolores cum praesentium pariatur porro quae fuga perspiciatis.</p>
+        </div>
+        <div class=" col-12 col-md-6 bg-theme tag">
+          <ul class="list-group order-1">
+            <li class="list-group-item d-flex justify-content-start align-items-center">
+              <i class="bi bi-bug px-3"></i>
+              We've worked out the bugs
+            </li>
+            <li class="list-group-item d-flex justify-content-start align-items-center">
+              <i class="bi bi-cloud-drizzle px-3"></i>
+              Perfect for a rainy day
+            </li>
+            <li class="list-group-item d-flex justify-content-start align-items-center">
+              <i class="bi bi-gear px-3"></i>
+              Moveable Parts
+            </li>
+            <li class="list-group-item d-flex justify-content-start align-items-center">
+              <i class="bi bi-globe px-3"></i>
+              Recognized around the world
+            </li>
+            <li class="list-group-item d-flex justify-content-start align-items-center">
+              <i class="bi bi-heart px-3"></i>
+              I promise you'll love it
+            </li>
+            <li class="list-group-item d-flex justify-content-start align-items-center">
+              <i class="bi bi-cart px-3"></i>
+              BUY STUFF
+
+            </li>
+
+          </ul>
+        </div>
+      </div>
+
+    </section>
+    <!-- SECTION x-wing fiddle with button -->
+    <section>
+      <div class="row justify-content-between px-2 g-0">
+        <div class="col-12 col-md-4">
+          <img src="https://cdn.shopify.com/s/files/1/1881/2599/products/XWing2_1200x1200.png?v=1585132009" alt=""
+            style="min-width:30vh; width:100%">
+        </div>
+        <div class="col-12 col-md-8 mb-2">
+          <p>
+          <h3><i class="bi bi-lightbulb-fill"></i>Cool Ideas!</h3>Lorem ipsum dolor sit amet
+          consectetur adipisicing elit. Ipsam earum facere alias numquam
+          veritatis cum doloremque, voluptate unde reiciendis soluta illum quae,
+          ullam sed ex nam, provident modi? Suscipit, corrupti?
+          </p>
+          <p class="fs-5">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            Et doloremque autem a numquam beatae laborum laboriosam fugit? Inventore
+            quas deserunt consectetur eos nihil molestiae necessitatibus sit obcaecati.
+            Est, voluptate minima.</p>
+          <div class="text-end mx-2">
+            <button type="button" class="btn btn-primary">MORE</button>
+
+          </div>
+        </div>
+      </div>
+
+    </section>
+    <!-- SECTION reviews-->
+    <section class="container-fluid">
+      <div class="row text-center justify-content-between align-items-center bg-theme ">
+        <div class="col-md-3 review-card order-lg-1">
+          <p><i class="bi bi-chat-square-quote-fill"></i>
+            Lorem ipsum dolor sit amet consectetur
+            adipisicing elit. Inventore sequi tenetur, asperiores est maxime ipsam magnam
+            ad quia neque deserunt mollitia dolorem nihil quas,
+          </p>
+          <br>
+          <p class="text-primary fw-bold">Don Broker</p>
+          <p class="text-info fw-light fst-italic fs-6">A for real engineer!</p>
+
+        </div>
+        <div class="col-md-3 review-card order-lg-2 order-first">
+          <i class="bi bi-star-fill fs-5"></i><i class="bi bi-star-fill fs-5"></i><i class="bi bi-star-fill fs-5"></i>
+          <br>
+          <br>
+          <p><i class="bi bi-chat-square-quote-fill"></i>
+            Lorem ipsum dolor sit amet consectetur
+            adipisicing elit. Inventore sequi tenetur, asperiores est maxime ipsam magnam
+            ad quia neque deserunt mollitia dolorem nihil quas, Lorem ipsum dolor sit amet consectetur adipisicing elit.
+          </p>
+          <br>
+          <p class="text-primary fw-bold">Don Broker</p>
+          <p class="text-info fw-light fst-italic fs-6">A for real engineer!</p>
+
+        </div>
+        <div class="col-md-3 review-card order-lg-3">
+          <p><i class="bi bi-chat-square-quote-fill"></i>
+            Lorem ipsum dolor sit amet consectetur
+            adipisicing elit. Inventore sequi tenetur, asperiores est maxime ipsam magnam
+            ad quia neque deserunt mollitia dolorem nihil quas,
+          </p>
+          <br>
+          <p class="text-primary fw-bold">Don Broker</p>
+          <p class="text-info fw-light fst-italic fs-6">A for real engineer!</p>
+
+        </div>
+
+      </div>
+
+    </section>
+    <section>
+      <div class="row bg-secondary g-0">
+        <div class="col-md-12 p-5">
+          <h1>Buy some LEGO!</h1>
+          <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Enim, ex suscipit
+            commodi ab exercitationem ducimus dolores distinctio dolorum accusantium, soluta
+            omnis possimus magnam debitis, assumenda sed asperiores error. Aspernatur, repellendus.</p>
+        </div>
+      </div>
+
+    </section>
+    <footer>
+      <div class="row bg-primary text-center align-content-center g-0">
+        <div class="col-12">
+          <p>Assembled with care by Coel Allen</p>
+
+        </div>
+      </div>
+
+    </footer>
+  </main>
+
+</body>
+
+</html>
