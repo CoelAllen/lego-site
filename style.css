@@ -25,6 +25,14 @@
   background-color: var(--theme-primary);
 }
 
+.love {
+  background-color: #1111115d;
+  border-radius: 8px;
+  padding: 1rem;
+  font-family: 'Oswald', sans-serif;
+
+}
+
 .bg-secondary {
   background-color: var(--theme-red) !important;
 }
@@ -48,6 +56,7 @@
   border-radius: 8px;
   padding: 2rem;
   margin: 2rem;
+  font-family: 'Oswald', sans-serif;
 
 
 
