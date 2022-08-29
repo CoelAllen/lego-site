@@ -57,9 +57,12 @@
   padding: 2rem;
   margin: 2rem;
   font-family: 'Oswald', sans-serif;
+}
 
-
-
+.lapse {
+  box-shadow: 5px 5px 5px var(--theme-black);
+  border-radius: 8px;
+  margin: 2rem;
 }
 
 @media screen and (max-width: 768px) {
@@ -70,8 +73,6 @@
     left: 0vh;
     z-index: 1000;
     max-width: 100%;
-
-
   }
 
   .review-card {
@@ -88,7 +89,6 @@
     box-shadow: 0 .5rem var(--theme-secondary);
     max-width: 75%;
     transform: translateX(+50px);
-
   }
 
 }
